@@ -160,6 +160,29 @@ $RECYCLE.BIN/
 
 ###LINUX
 
+icon.svg
+site.webmanifest
+webpack.config.dev.js
+.gitattributes
+robots.txt
+webpack.common.js
+404.html
+.editorconfig
+package.json
+webpack.config.prod.js
+index.html
+favicon.ico
+icon.png
+LICENSE.txt
+
+
+img/.idea
+img/.idea/php.xml
+img/.idea/workspace.xml
+img/.idea/modules.xml
+img/.idea/img.iml
+img/.idea/.gitignore
+
 *~
 
 # temporary files which can be created if a process still has a handle open of a deleted file
