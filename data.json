@@ -1,0 +1,53 @@
+{
+  "projects": [
+    {
+      "title": "MIPS COMPILER",
+      "short_description": "Flex & Bison compiler of MIPS assembly code",
+      "description": "AST Tree based compiler for MIPS processor. It uses a basic set of commands but is primed for further development.",
+      "thumbnail" : "img/mips.png",
+      "media": [],
+      "link": "https://github.com/kodeinek/ZUT-Academy/tree/master/Uni/AST%20compiler"
+    },
+
+    {
+      "title": "Self-driving robot",
+      "short_description": "Autonomous SLAM-based robot equipped with stereo vision for environment mapping and shortest path navigation.",
+      "description": "The robot uses a stereo camera and real-time SLAM algorithm to perceive its surroundings, build a 2D occupancy map, and localize itself within it. It continuously analyzes the environment to plan and optimize its route toward a target destination, avoiding obstacles and dynamically adjusting its trajectory. The system is designed for modular development.",
+      "thumbnail" : "img/roomba.jpg",
+      "media": [],
+      "link": "https://github.com/kodeinek/SLAM"
+    }
+
+  ],
+  "main": {
+    "profilePic": "img/profilePic.gif",
+    "tag": "Łukasz Jaroszewicz – Software Engineer / Programmer",
+    "headline": "Building robotics, computer vision & full-stack applications",
+    "bio": "Computer Science Engineer from ZUT Szczecin. Specializing in SLAM systems, OpenCV, ZED cameras, CUDA, C#, Python and Avalonia desktop apps. Currently working on autonomous navigation and real-time image processing projects.",
+    "skills": [
+      "Robotics & SLAM",
+      "Computer Vision (OpenCV)",
+      "Python / C++ / CUDA",
+      "C# / Avalonia (.NET)",
+      "JavaScript / Full-Stack",
+      "GPU Programming"
+    ]
+  },
+
+  "contact": {
+    "phone": "+48 792 773 171",
+    "email": "jaroszeewicz@gmail.com",
+    "facebook": "https://www.facebook.com/profile.php?id=100000249029163",
+    "github": "https://github.com/kodeinek"
+
+  },
+
+
+  "misc": [
+    "misc/ms1.pdf",
+    "misc/ms2.pdf",
+    "misc/ms3.pdf"
+
+  ]
+}
+
