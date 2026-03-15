@@ -22,15 +22,16 @@
   "main": {
     "profilePic": "img/profilePic.gif",
     "tag": "Łukasz Jaroszewicz – Software Engineer / Programmer",
-    "headline": "Building robotics, computer vision & full-stack applications",
-    "bio": "Computer Science Engineer from ZUT Szczecin. Specializing in SLAM systems, OpenCV, ZED cameras, CUDA, C#, Python and Avalonia desktop apps. Currently working on autonomous navigation and real-time image processing projects.",
+    "headline": "Robotics, computer vision, full-stack applications",
+    "bio": "Born in 1998, Computer Science Engineer from ZUT Szczecin. Currently expanding on previous autonomous navigation project and real-time image processing with intent on applying object manipulation to the robot. Pursuing masters in Computer Science and finishing masters in Psychology. Focusing on machine learning algorithms before continuing no to generative AI.",
     "skills": [
       "Robotics & SLAM",
       "Computer Vision (OpenCV)",
       "Python / C++ / CUDA",
       "C# / Avalonia (.NET)",
       "JavaScript / Full-Stack",
-      "GPU Programming"
+      "GPU Programming",
+      "Others"
     ]
   },
 
@@ -44,9 +45,13 @@
 
 
   "misc": [
+    "misc/ms6.pdf",
     "misc/ms1.pdf",
     "misc/ms2.pdf",
-    "misc/ms3.pdf"
+    "misc/ms3.pdf",
+    "misc/ms4.jpg",
+
+    "misc/ms5.jpg"
 
   ]
 }

@@ -170,7 +170,6 @@ webpack.common.js
 .editorconfig
 package.json
 webpack.config.prod.js
-index.html
 favicon.ico
 icon.png
 LICENSE.txt

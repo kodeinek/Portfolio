@@ -8,13 +8,13 @@ function createMediaElement(src) {
   if (imageExts.includes(ext)) {
     const img = document.createElement('img');
     img.src = src;
-    img.className = 'media_item';
+    img.className = 'mediaItem';
     return img;
 
   } else if (videoExts.includes(ext)) {
     const video = document.createElement('video');
     video.src = src;
-    video.className = 'media_item';
+    video.className = 'mediaItem';
     video.controls = true;
     video.muted = true;
     video.autoplay = false;
@@ -26,12 +26,14 @@ function createMediaElement(src) {
 function createMiscElement(src) {
   const ext = src.split('.').pop().toLowerCase();
   if (ext === 'pdf') {
-    const iframe = document.createElement('iframe');
+    const iframe = document.createElement('embed');
     iframe.src = src;
-    iframe.className = 'media_item';
+    iframe.className = 'miscItem';
     return iframe;
   }
-  return createMediaElement(src);
+  item = createMediaElement(src);
+  item.className = "miscItem"
+  return item
 }
 
 
@@ -56,22 +58,11 @@ class navigation {
 
       const postPage = document.createElement("div")
       postPage.className = "postPage"
-
-      const name = document.createElement("p")
-      name.className = "listing_name"
-      name.innerHTML = project.title
-      postPage.appendChild(name)
-
-      const image = document.createElement("img")
-      image.className = "listing_image"
-      image.src = project.thumbnail
-      postPage.appendChild(image)
-
-      const desc = document.createElement("p")
-      desc.className = "desc"
-      desc.innerHTML = project.description
-      postPage.appendChild(desc)
-
+      postPage.innerHTML =`
+      <p class="listingName">${project.title}</p>
+      <img src="${project.thumbnail}" class="listingImage">
+      <p class="desc">${project.description}</p>
+      `
 
       project.media.forEach(src => {
         const el = createMediaElement(src);
@@ -103,30 +94,35 @@ class navigation {
     gridTop.className = "gridTop";
     gridTop.innerHTML =
         `
-    <img src="${this.data.main.profilePic}" alt="Profile" class="profile-pic">
     <h1>${this.data.main.tag}</h1>
-    <p>${this.data.main.headline}</p>
         `;
-
+    //<p>${this.data.main.headline}</p>
 
     const gridMidLeft = document.createElement("div");
     gridMidLeft.className = "gridMidLeft";
     gridMidLeft.innerHTML = `
-    <h2>About Me</h2>
-    <p>${this.data.main.bio}</p>
-    <ul class="skills">
-      ${this.data.main.skills.map(skill => `<li>${skill}</li>`).join('')}
-    </ul>
+    <img src="${this.data.main.profilePic}" alt="Profile" class="profilePic">
+
   `;
 
     const gridMidRight = document.createElement("div");
     gridMidRight.className = "gridMidRight";
     gridMidRight.innerHTML = `
-    <h2>Recent Projects</h2>
-    <a href="#projects" class="projects">View All Projects</a>
+    <h2>About Me</h2>
+    <p>${this.data.main.bio}</p>
+    <ul class="skills">
+      ${this.data.main.skills.map(skill => `<li>${skill}</li>`).join('')}
+    </ul>
     `
+    const gridBottom = document.createElement("div");
+    gridBottom.className = "gridBottom";
+    gridBottom.innerHTML =
+        `
+    <p>Profile pic coming soon. Any programming language is fine.</p>
 
-    grid.append(gridTop, gridMidLeft, gridMidRight);
+        `;
+
+    grid.append(gridTop, gridMidLeft, gridMidRight, gridBottom);
     mainPage.appendChild(grid);
 
     this.face.appendChild(mainPage);
@@ -145,10 +141,10 @@ class navigation {
     contactPage.className = "contactPage"
     contactPage.innerHTML= `
 
-    <h2>${phone}</h2>
-    <h2>${mail}</h2>
-    <a href = ${github} class="link"> Github </a>
-    <a href = ${fcb} class="link"> Facebook </a>
+    <p class="info">📞 ${phone}</p>
+    <p class="info">✉️ ${mail}</p>
+    <a href="${github}" class="link">🐙 Github</a>  
+    <a href="${fcb}" class="link">📘 Facebook</a>
     `
     this.face.appendChild(contactPage)
 

@@ -10,7 +10,7 @@ body {
   background-blend-mode: lighten;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 80%;
+  width: 100vh;
   margin: auto;
   margin-top: 5%;
   display: flex;
@@ -25,34 +25,27 @@ body {
   gap: 4%;
 
 }
-
 nav ul {
   list-style: none;
-
 }
 
-.menu a {
+.menu a{
   color: white;
   mix-blend-mode: difference;
-  text-decoration: none;
-  font-size: 3em;
+  text-decoration: None;
+  font-size: 3vh;
   white-space: nowrap;
-  text-shadow: 0 0 8px #070707, 0 0 20px #ffffff;
 }
 
 #face{
-  width: 80%;
-
-  background-color: #555555;
+  width: 100vh;
+  background-color: rgba(85, 85, 85, 0.95);
   border-radius: 50px;
   margin: auto;
   margin-top: 5%;
   padding: 2%;
 }
 
-
-#slot {
-}
 
 .postPage{
   display: grid;
@@ -66,44 +59,63 @@ nav ul {
   padding-right: 4%;
 
 }
-.listing_image{
+
+.listingImage{
   width: 60%;
 }
-
-.mainPage{
-  .parent {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    gap: 0;
-  }
+.listingName{
+  font-size: 2rem;
 }
-
+.desc{
+  font-size: 1rem;
+}
 
 .mainGrid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  height: 80vh;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, auto);
   gap: 20px;
-  padding: 20px;
+
 }
 
-.gridTop { grid-area: 1 / 1 / 2 / 4; }
-.gridMidLeft { grid-area: 2 / 1 / 4 / 2; }
-.gridMidRight { grid-area: 2 / 2 / 4 / 4; }
+.gridTop { grid-area: 1 / 1 / 2 / 3; }
+.gridMidLeft { grid-area: 2 / 1 / 3 / 2; }
+.gridMidRight { grid-area: 2 / 2 / 3 / 3; }
+.gridBottom { grid-area: 3 / 1 / 4 / 3; display: flex}
+
+.profilePic{
+  width: 100%;
+}
+
+
 
 
 .miscContainer {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
-  padding: 20px;
-  max-width: 1200px;
+
 }
 
-.media_item {
-  flex: 1 1 calc(50% - 10px);
-  max-height: 300px;
-  object-fit: cover;
+.mediaItem {
+
+
+}
+.miscItem{
+  height: 70vh;
+  width: 49%;
+  margin: auto;
+}
+
+.contactPage{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.link, .info {
+  color: black;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-family: "Times New Roman";
+  margin: 0;
+  filter: grayscale(100%) brightness(0.5);
 }
