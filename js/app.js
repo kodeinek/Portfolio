@@ -18,6 +18,8 @@ function createMediaElement(src) {
     video.controls = true;
     video.muted = true;
     video.autoplay = false;
+    video.preload = 'metadata';
+
     return video;
   }
   return null;

@@ -14,7 +14,7 @@
       "short_description": "Autonomous SLAM-based robot equipped with stereo vision for environment mapping and shortest path navigation.",
       "description": "The robot uses a stereo camera and real-time SLAM algorithm to perceive its surroundings, build a 2D occupancy map, and localize itself within it. It continuously analyzes the environment to plan and optimize its route toward a target destination, avoiding obstacles and dynamically adjusting its trajectory. The system is designed for modular development.",
       "thumbnail" : "img/roomba.jpg",
-      "media": [],
+      "media": ["img/slam.webm"],
       "link": "https://github.com/kodeinek/SLAM"
     }
 
