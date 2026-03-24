@@ -84,7 +84,7 @@ nav ul {
 .gridBottom { grid-area: 3 / 1 / 4 / 3; display: flex}
 
 .profilePic{
-  width: 100%;
+  width: 90%;
 }
 
 

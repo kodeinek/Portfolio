@@ -120,7 +120,7 @@ class navigation {
     gridBottom.className = "gridBottom";
     gridBottom.innerHTML =
         `
-    <p>Profile pic coming soon. Any programming language is fine.</p>
+
 
         `;
 
@@ -135,7 +135,8 @@ class navigation {
     this.clear();
     const c= this.data.contact
     const phone = c.phone
-    const mail =c.email
+
+
     const fcb = c.facebook
     const github = c.github
 
@@ -144,7 +145,10 @@ class navigation {
     contactPage.innerHTML= `
 
     <p class="info">📞 ${phone}</p>
-    <p class="info">✉️ ${mail}</p>
+   
+    <a href="mailto:jaroszeewicz@gmail.com" class = "info">
+          ✉️ jarosz<span style="text-decoration: underline;">ee</span>wicz@gmail.com
+    </a>
     <a href="${github}" class="link">🐙 Github</a>  
     <a href="${fcb}" class="link">📘 Facebook</a>
     `
