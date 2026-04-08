@@ -23,7 +23,7 @@
     "profilePic": "img/profilePic.gif",
     "tag": "Łukasz Jaroszewicz – Software Engineer / Programmer",
     "headline": "Robotics, computer vision, full-stack applications",
-    "bio": "Born in 1998, Computer Science Engineer from ZUT Szczecin. Currently expanding on previous autonomous navigation project and real-time image processing with intent on applying object manipulation to the robot. Pursuing masters in Computer Science and finishing masters in Psychology. Focusing on machine learning algorithms before continuing no to generative AI.",
+    "bio": "Born in 1998, Computer Science Engineer from ZUT Szczecin. Currently expanding on previous autonomous navigation project and real-time image processing with intent on applying object manipulation to the robot. Pursuing masters in Computer Science and finishing masters in Psychology. Focusing on machine learning algorithms before continuing to generative AI.",
     "skills": [
       "Robotics & SLAM",
       "Computer Vision (OpenCV)",
